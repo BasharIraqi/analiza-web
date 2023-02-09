@@ -1,11 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-welocme-page',
-  templateUrl: './welocme-page.component.html',
-  styleUrls: ['./welocme-page.component.css']
+  selector: 'app-page-mode',
+  templateUrl: './page-mode.component.html',
+  styleUrls: ['./page-mode.component.scss']
 })
-export class WelocmePageComponent {
+export class PageModeComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 
   changePageColor(color){
     var body = document.getElementsByTagName('body')[0];
@@ -16,4 +21,5 @@ export class WelocmePageComponent {
       body.classList.remove('white-content');
     }
   }
+
 }

@@ -14,6 +14,9 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { AppRoutingModule } from "./app-routing.module";
 import { ComponentsModule } from "./components/components.module";
 import { WelocmePageComponent } from "./layouts/welocme-page/welocme-page.component";
+import { LoginComponent } from "./layouts/login/login.component";
+import { RegisterComponent } from "./layouts/register/register.component";
+import { ResetPasswordComponent } from "./layouts/reset-password/reset-password.component";
 
 @NgModule({
   
@@ -27,7 +30,7 @@ import { WelocmePageComponent } from "./layouts/welocme-page/welocme-page.compon
     AppRoutingModule,
     ToastrModule.forRoot()
   ],
-  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent,WelocmePageComponent],
+  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent,WelocmePageComponent,LoginComponent,RegisterComponent,ResetPasswordComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
