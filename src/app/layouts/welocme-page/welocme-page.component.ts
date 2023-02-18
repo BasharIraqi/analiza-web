@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class WelocmePageComponent {
 
+
+  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+
   changePageColor(color){
     var body = document.getElementsByTagName('body')[0];
     if (body && color === 'white-content') {

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "data-analiza": {
+      "hosting": {
+        "black-dashboard-angular": [
+          "data-analiza-2023"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "data-analiza"
+  }
+}
