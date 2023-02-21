@@ -7,9 +7,10 @@ import { FooterComponent } from "./footer/footer.component";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { SidebarComponent } from "./sidebar/sidebar.component";
 import { PageModeComponent } from './page-mode/page-mode.component';
+import {MatBadgeModule} from '@angular/material/badge';
 
 @NgModule({
-  imports: [CommonModule, RouterModule, NgbModule],
+  imports: [CommonModule, RouterModule, NgbModule,MatBadgeModule],
   declarations: [FooterComponent, NavbarComponent, SidebarComponent, PageModeComponent],
   exports: [FooterComponent, NavbarComponent, SidebarComponent,PageModeComponent]
 })
